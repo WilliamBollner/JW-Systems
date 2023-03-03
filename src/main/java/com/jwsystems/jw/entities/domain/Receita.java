@@ -24,7 +24,7 @@ public class Receita implements Serializable {
     }
 
     public Receita(Integer id, BigDecimal valor, LocalDate data, String descricao, Conta conta) {
-        id = id;
+        this.id = id;
         this.valor = valor;
         this.data = data;
         this.descricao = descricao;

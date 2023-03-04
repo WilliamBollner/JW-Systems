@@ -14,7 +14,7 @@ public class CartaoCreditoDTO implements Serializable {
     private Integer Id;
     @NotNull(message = "O campo NOME é requerido")
     private String nome;
-    @NotNull(message = "Uma conta é requerida")
+    @NotNull(message = "Uma CONTA é requerida")
     private String nomeConta;
 
     public CartaoCreditoDTO() {

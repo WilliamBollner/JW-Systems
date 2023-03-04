@@ -16,8 +16,6 @@ public class ContaDTO implements Serializable {
     private String nomeConta;
     @NotNull(message = "O campo SALDO INICIAL é requerido")
     private BigDecimal saldoInicial;
-    @NotNull(message = "O campo SALDO é requerido")
-    private BigDecimal saldo;
 
     public ContaDTO(){
     }

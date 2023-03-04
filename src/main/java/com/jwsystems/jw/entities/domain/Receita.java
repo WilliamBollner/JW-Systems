@@ -19,6 +19,10 @@ public class Receita implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate data;
     private String descricao;
+    
+    @ManyToOne
+    @JoinColumn(name = "conta_id")
+    private Conta conta;
 
     public Receita(){
     }
@@ -30,11 +34,7 @@ public class Receita implements Serializable {
         this.descricao = descricao;
         this.conta = conta;
     }
-
-    @ManyToOne
-    @JoinColumn(name = "conta_id")
-    private Conta conta;
-
+    
     public Conta getConta() {
         return conta;
     }
@@ -48,7 +48,7 @@ public class Receita implements Serializable {
     }
 
     public void setId(Integer id) {
-        id = id;
+        this.id = id;
     }
 
     public BigDecimal getValor() {

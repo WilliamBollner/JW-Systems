@@ -34,8 +34,8 @@ public class Despesa implements Serializable {
     public Despesa(){
     }
 
-    public Despesa(Integer id, BigDecimal valor, String descricao, LocalDate data, Conta conta,
-                   CartaoCredito cartaoCredito, Categoria categoria) {
+    public Despesa(Integer id, BigDecimal valor, String descricao, LocalDate data,
+                   Conta conta, CartaoCredito cartaoCredito, Categoria categoria) {
         this.id = id;
         this.valor = valor;
         this.descricao = descricao;
@@ -59,7 +59,7 @@ public class Despesa implements Serializable {
     }
 
     public void setId(Integer id) {
-        id = id;
+        this.id = id;
     }
 
     public BigDecimal getValor() {

@@ -29,7 +29,8 @@ public class Conta implements Serializable {
     public Conta(){
     }
 
-    public Conta(Integer id, String nomeConta, BigDecimal saldoInicial, BigDecimal saldo, List<CartaoCredito> cartaoCreditos, List<Receita> receitas, List<Despesa> despesas) {
+    public Conta(Integer id, String nomeConta, BigDecimal saldoInicial, BigDecimal saldo, List<CartaoCredito> cartaoCreditos, 
+                 List<Receita> receitas, List<Despesa> despesas) {
         this.id = id;
         this.nomeConta = nomeConta;
         this.saldoInicial = saldoInicial;

@@ -1,9 +1,6 @@
 package com.jwsystems.jw.entities.dtos;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.jwsystems.jw.entities.domain.CartaoCredito;
-import com.jwsystems.jw.entities.domain.Categoria;
-import com.jwsystems.jw.entities.domain.Conta;
 import com.jwsystems.jw.entities.domain.Despesa;
 import jakarta.validation.constraints.NotNull;
 

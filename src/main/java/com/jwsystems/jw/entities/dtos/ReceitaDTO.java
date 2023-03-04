@@ -33,7 +33,7 @@ public class ReceitaDTO implements Serializable {
     }
 
     public void setId(Integer id) {
-        id = id;
+        this.id = id;
     }
 
     public BigDecimal getValor() {

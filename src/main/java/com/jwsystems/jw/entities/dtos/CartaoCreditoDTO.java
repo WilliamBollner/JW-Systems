@@ -11,7 +11,7 @@ public class CartaoCreditoDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
-    private Integer Id;
+    private Integer id;
     @NotNull(message = "O campo NOME é requerido")
     private String nome;
     @NotNull(message = "Uma CONTA é requerida")
@@ -21,17 +21,17 @@ public class CartaoCreditoDTO implements Serializable {
     }
 
     public CartaoCreditoDTO(CartaoCredito obj){
-        this.Id = obj.getId();
+        this.id = obj.getId();
         this.nome = obj.getNome();
         this.nomeConta = obj.getConta().getNomeConta();
     }
 
     public Integer getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Integer id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getNome() {
